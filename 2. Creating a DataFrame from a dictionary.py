@@ -7,3 +7,6 @@ movie_dict = {'years': years, 'durations': durations}
 
 durations_df = pd.DataFrame(movie_dict)
 print(durations_df)
+
+for index in durations_df.index:
+    print('in ' + str(durations_df['years'][index]) + ' duration was ' + str(durations_df['durations'][index]))
